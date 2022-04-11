@@ -8,8 +8,11 @@ export default function Header({ rates }) {
   });
   return (
     <div className={css.header}>
-             <h1 className={css.title}>Currency Converter</h1>
-      <h1 className={css.subtitle}>Exchange rate for <span className={css.subtitle_data}>{currentDate}</span></h1>
+      <h1 className={css.title}>Currency Converter</h1>
+      <h1 className={css.subtitle}>
+        Exchange rate for{" "}
+        <span className={css.subtitle_data}>{currentDate}</span>
+      </h1>
       <ul className={css.currency_list}>
         <li className={css.currency}>
           <h2>USD/EUR</h2>
